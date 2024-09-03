@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Register</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.username.label }} {{ form.username }}<br>
+    {{ form.email.label }} {{ form.email }}<br>
+    {{ form.password.label }} {{ form.password }}<br>
+    {{ form.role.label }} 
+    <select name="role">
+        <option value="USER">User</option>
+        <option value="ADMIN">Admin</option>
+    </select><br>  <!-- Dropdown menu for selecting user role -->
+    {{ form.submit() }}
+</form>
+{% endblock %}

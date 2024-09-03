@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add Room</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name }}<br>
+    {{ form.date.label }} {{ form.date }}<br>
+    {{ form.start_time.label }} {{ form.start_time }}<br>
+    {{ form.end_time.label }} {{ form.end_time }}<br>
+    {{ form.description.label }} {{ form.description }}<br>
+    {{ form.submit() }}
+</form>
+{% endblock %}

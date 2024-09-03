@@ -1,0 +1,171 @@
+/* Style h1 tag */
+h1 {
+    font-size: 24px; /* Set font size */
+    margin-bottom: 20px; /* Add space below the h1 */
+    color: blue;/* Set text color */
+}
+
+/* Style h2 tag */
+h2 {
+    font-size: 20px; /* Set font size */
+    margin-bottom: 15px; /* Add space below the h2 */
+    color: #555; /* Set text color */
+}
+
+/* Style h3 tag */
+h3 {
+    font-size: 18px; /* Set font size */
+    margin-bottom: 10px; /* Add space below the h3 */
+    color: #777; /* Set text color */
+}
+
+/* Style for loop tags */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add space below each list item */
+}
+
+/* Style for loop tags */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add space below each list item */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* style.css */
+
+/* Common styles for all navbars */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* styles.css */
+
+/* Apply basic styles to form elements */
+form {
+    margin: 20px auto; /* Center the form horizontally */
+    max-width: 400px; /* Set maximum width for the form */
+}
+
+/* Style form labels */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some space below each label */
+    font-weight: bold; /* Make labels bold */
+}
+/* Apply basic styles to form elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Increase height of text area */
+textarea {
+    height: 150px;
+}
+
+/* Style submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style hover effect on submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* styles.css */
+
+/* Apply basic styles to alert messages */
+.alert {
+    margin: 20px auto; /* Center the alert horizontally */
+    padding: 10px; /* Add padding to the alert */
+    border-radius: 4px; /* Add border radius to the alert */
+    text-align: center; /* Center the text inside the alert */
+}
+
+/* Apply different styles based on alert categories */
+.alert-success {
+    background-color: #d4edda; /* Set background color for success messages */
+    border: 1px solid #c3e6cb; /* Set border color for success messages */
+    color: #155724; /* Set text color for success messages */
+}
+
+.alert-error {
+    background-color: #f8d7da; /* Set background color for error messages */
+    border: 1px solid #f5c6cb; /* Set border color for error messages */
+    color: #721c24; /* Set text color for error messages */
+}
+
+/* Apply basic styles to footer */
+footer {
+    background-color: #f8f9fa; /* Set background color */
+    padding: 20px; /* Add padding to the footer */
+    text-align: center; /* Center align text */
+}
+
+/* Style footer content */
+footer p {
+    margin: 0; /* Remove default margin */
+    color: #777; /* Set text color */
+    font-size: 14px; /* Set font size */
+}
+
+

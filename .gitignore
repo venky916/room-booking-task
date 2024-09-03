@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Flask files
+instance/
+*.db
+*.sqlite3
+*.pyc
+
+# Environment variables
+.env
+
+# Flask-Migrate files
+migrations/versions/
+migrations/__pycache__/
+
+# Python virtual environment
+venv/
+ENV/
+.venv/
+
+# Flask cache
+*.log
+
+# Static and media files
+static/*
+!static/favicon.ico
+!static/styles.css
+
+# Compiled files
+*.o
+*.so
+*.out
+*.a
+
+# IDE files
+.vscode/
+.idea/
+
+# Node modules (if used)
+node_modules/
+
+# Documentation
+*.docx
+*.pdf
+*.rtf
+
+# MacOS
+.DS_Store

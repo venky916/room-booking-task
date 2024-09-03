@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<p>Total Rooms: {{ total_rooms }}</p>
+<p>Total Bookings: {{ total_bookings }}</p>
+<p>Available Rooms: {{ available_rooms }}</p>
+<p>Available Bookings: {{ available_bookings }}</p>
+
+<h3>List of Users</h3>
+<ul>
+    {% for user in users %}
+    <li>{{ user.username }} - {{ user.email }}</li>
+    {% endfor %}
+</ul>
+
+<h3>List of Bookings</h3>
+<ul>
+    {% for booking in bookings %}
+        <li>User: {{ booking.user.username }} | Room: {{ booking.room.name }} | Date: {{ booking.date }} | Start Time: {{ booking.start_time }} | End Time: {{ booking.end_time }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

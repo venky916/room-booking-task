@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available Rooms</h2>
+<ul>
+    {% for room in rooms %}
+    <li>{{ room.name }} - Capacity: {{ room.capacity }} - Available Time: {{ room.start_time.strftime('%H:%M') }} to {{ room.end_time.strftime('%H:%M') }} - Date: {{ room.date }}</li>
+    <a href="{{ url_for('book_room', room_id=room.id) }}">Book Now</a>
+    <hr>
+    {% endfor %}
+</ul>
+{% endblock %}

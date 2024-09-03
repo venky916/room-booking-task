@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Book Room</h2>
+
+  <h3>Existing Bookings:</h3>
+  <ul>
+    {% for booking in existing_bookings %}
+      <li>User: {{ booking.user.username }} | Date: {{ booking.date }} | Start Time: {{ booking.start_time }} | End Time: {{ booking.end_time }}</li>
+    {% endfor %}
+  </ul>
+
+  {% if room.capacity!=0 %}
+    <form method="post">
+      {{ form.hidden_tag() }}
+      <input type="hidden" name="room_id" value="{{ room.id }}">
+      <input type="hidden" name="date" value="{{ room.date }}">
+      {{ form.start_time.label }} {{ form.start_time }}<br>
+      {{ form.end_time.label }} {{ form.end_time }}<br>
+      {{ form.submit() }}
+  </form>
+  {% endif %}
+  
+{% endblock %}

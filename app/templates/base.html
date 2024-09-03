@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Room Booking</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Add your CSS links or other head content here -->
+</head>
+<body>
+<header>
+    <h1>Flask Room Booking</h1>
+    {% if 'username' in session %}
+        {% if session['role'] == 'ADMIN' %}
+            {% include 'navbar_admin.html' %}
+        {% else %}
+            {% include 'navbar_nonadmin.html' %}
+        {% endif %}
+    {% else %}
+        {% include 'navbar_auth.html' %}
+    {% endif %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</header>
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>Contact me: Venkatesh Maliga | venkateshsmsv1999@gmail.com | +91 9494600916</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://github.com/venky916" class="social-icon">github</a>
+            <a href="https://www.linkedin.com/in/Venkatesh-Maliga/" class="social-icon">linkedin</a>
+        </div>
+        <p>&copy; 2024 ROOM BOOKING . All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
